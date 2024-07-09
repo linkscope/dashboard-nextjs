@@ -9,6 +9,9 @@ import {
   RevenueChartSkeleton,
 } from '@/app/ui/skeletons';
 
+// @ts-ignore
+export const experimental_ppr = true;
+
 export default async function DashboardPage() {
   return (
     <main>

@@ -58,22 +58,22 @@ export default async function InvoicesTable({
             <thead className="rounded-lg text-left text-sm font-normal">
               <tr>
                 <th scope="col" className="px-4 py-5 font-medium sm:pl-6">
-                  Customer
+                  用户
                 </th>
                 <th scope="col" className="px-3 py-5 font-medium">
-                  Email
+                  邮箱
                 </th>
                 <th scope="col" className="px-3 py-5 font-medium">
-                  Amount
+                  金额
                 </th>
                 <th scope="col" className="px-3 py-5 font-medium">
-                  Date
+                  日期
                 </th>
                 <th scope="col" className="px-3 py-5 font-medium">
-                  Status
+                  状态
                 </th>
                 <th scope="col" className="relative py-3 pl-6 pr-3">
-                  <span className="sr-only">Edit</span>
+                  <span className="sr-only">编辑</span>
                 </th>
               </tr>
             </thead>
@@ -102,7 +102,7 @@ export default async function InvoicesTable({
                     {formatCurrency(invoice.amount)}
                   </td>
                   <td className="whitespace-nowrap px-3 py-3">
-                    {formatDateToLocal(invoice.date)}
+                    {formatDateToLocal(invoice.date, 'zh-Hans-CN')}
                   </td>
                   <td className="whitespace-nowrap px-3 py-3">
                     <InvoiceStatus status={invoice.status} />
